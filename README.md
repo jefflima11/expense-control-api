@@ -1,0 +1,2 @@
+# expense-control-api
+ API para gerenciamento de finanças pessoais, permitindo o cadastro e controle de receitas e despesas fixas e temporárias. Desenvolvida em Node.js com Express e utilizando PostgreSQL como banco de dados. O objetivo do projeto é oferecer um sistema simples e eficiente para acompanhar os gastos e manter um controle financeiro organizado.  Se quiser adicionar mais detalhes, como funcionalidades futuras ou instruções de uso, me avise! 🚀
