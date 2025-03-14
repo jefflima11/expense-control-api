@@ -6,15 +6,15 @@
 
 Este é o back-end da aplicação **Expense Control**. A API foi desenvolvida usando **Express** e **PostgreSQL**, com o objetivo de gerenciar o controle de gastos pessoais. A API permite o cadastro de despesas e receitas fixas e temporárias.
 
-## Tecnologias Utilizadas
+### Tecnologias Utilizadas
 - **Node.js** com **Express** para o back-end.
 - **PostgreSQL** como banco de dados.
 - **JWT** para autenticação (em implementação).
 - **dotenv** para gerenciar variáveis de ambiente.
 
-## Instruções para o Front-End
+### Instruções para o Front-End
 
-### Endpoints
+#### Endpoints
 
 A API possui os seguintes endpoints principais:
 
@@ -23,7 +23,7 @@ A API possui os seguintes endpoints principais:
 - **GET** `/api/expenses` - Listagem de todas as despesas.
 - **GET** `/api/incomes` - Listagem de todas as receitas.
 
-### Autenticação
+#### Autenticação
 A API utiliza **JWT** para autenticação. Para realizar chamadas protegidas, como criar ou editar despesas e receitas, o front-end deve enviar o token JWT no cabeçalho da requisição.
 
 - **Exemplo de cabeçalho com JWT:**
@@ -33,9 +33,9 @@ A API utiliza **JWT** para autenticação. Para realizar chamadas protegidas, co
     'Authorization': `Bearer <seu_token_jwt_aqui>`
   }
 
-# Estrutura das requisições
+### Estrutura das requisições
 
-- ## Exemplo de criação de despesas (POST/api/expenses): ##
+- #### Exemplo de criação de despesas (POST/api/expenses): ##
 
   ```javascript
   {
@@ -45,7 +45,7 @@ A API utiliza **JWT** para autenticação. Para realizar chamadas protegidas, co
     "dueDate": "2025-04-01"
   }
 
-- ## Exemplo de criação de despesas (POST/api/expenses): ##
+- #### Exemplo de criação de despesas (POST/api/expenses): ##
 
   ```javascript
   {
@@ -55,18 +55,18 @@ A API utiliza **JWT** para autenticação. Para realizar chamadas protegidas, co
     "dueDate": "2025-04-01"
   }
 
-# Como rodar a API localmente
+### Como rodar a API localmente
 
-- ## Clone este repositório para sua máquina local:
+- #### Clone este repositório para sua máquina local:
   ```bash
   git clone <url_do_repositório>
   cd finance-manager-api
 
-- ## Instale as dependências:
+- #### Instale as dependências:
   ```bash
   npm install
 
-- ## Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
+- #### Crie um arquivo .env na raiz do projeto com as seguintes variáveis:
   ```env
   DB_HOST=localhost
   DB_PORT=5432
@@ -75,25 +75,31 @@ A API utiliza **JWT** para autenticação. Para realizar chamadas protegidas, co
   DB_NAME=finance_manager
   JWT_SECRET=seu_segredo_jwt
 
-- ## Crie o banco de dados no PostgreSQL e rode as migrações (se houver).
+- #### Crie o banco de dados no PostgreSQL e rode as migrações (se houver).
 
-- ## Inicie o servidor:
+- #### Inicie o servidor:
   ```bash
   npm start
 
-- ## A API estará rodando em http://localhost:3000.
+- #### A API estará rodando em http://localhost:3000.
 
 # Como contribuir
 
-- ## Faça um fork deste repositório.
-- ## Crie uma branch para sua feature. Exemplo: (git checkout - b feature/nova-feature).
-- ## Faça commit das suas alterações. Exemplo: (git commit -am 'Adiciona nova feature').
-- ## Envie para o repositório remoto. Exemplo: (git push origin feature/nova-feature).
-- ## Abra um Pull Request.
+- Faça um fork deste repositório.
+- Crie uma branch para sua feature. Exemplo:
+  ```bash
+  (git checkout - b feature/nova-feature).
+- Faça commit das suas alterações. Exemplo:
+  ```bash
+  (git commit -am 'Adiciona nova feature').
+- Envie para o repositório remoto. Exemplo:
+  ```bash
+  (git push origin feature/nova-feature).
+- Abra um Pull Request.
 
 # Licença
 
-## Este projeto está licenciado sob a MIT License - Veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a MIT License - Veja o arquivo LICENSE para mais detalhes.
   
 
 
